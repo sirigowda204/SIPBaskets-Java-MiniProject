@@ -10,14 +10,14 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class Users {
 
     @Id
     @GeneratedValue
     int id;
     String userName;
     String bankAccount;
-    Long balance;
+    double balance;
     @ManyToOne
     @JoinColumn(name = "stock_id")
     Stock stock;
